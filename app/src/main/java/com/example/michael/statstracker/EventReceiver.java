@@ -5,18 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 
 public class EventReceiver extends BroadcastReceiver {
-    private boolean screenOff = true;
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Intent serviceIntent = new Intent(context, CreeperService.class);
         if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-            screenOff = true;
+            serviceIntent.putExtra("screen_state", true);
         } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-            screenOff = false;
+            serviceIntent.putExtra("screen_state", false);
         }
-        Intent i = new Intent(context, CreeperService.class);
-        i.putExtra("screen_state", screenOff);
-        context.startService(i);
+        context.startService(serviceIntent);
     }
-
 }

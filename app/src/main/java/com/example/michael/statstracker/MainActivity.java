@@ -28,10 +28,9 @@ import java.io.IOException;
 public class MainActivity extends ActionBarActivity {
 
     protected final String TAG = "MainActivity";
-    private String filename = "stat_storage";
     SQLiteDatabase db;
     StringBuilder builder = new StringBuilder("");
-    //protected Button start_recording;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

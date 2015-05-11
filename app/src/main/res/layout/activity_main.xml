@@ -9,7 +9,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Begin Tracking"
+        android:text="@string/begin_button_text"
         android:id="@+id/begin_button"
         android:layout_marginTop="75dp"
         android:layout_alignParentTop="true"
@@ -18,7 +18,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="End Tracking"
+        android:text="@string/end_button_text"
         android:id="@+id/end_button"
         android:layout_below="@+id/begin_button"
         android:layout_centerHorizontal="true"
@@ -27,9 +27,10 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="View Statistics"
+        android:text="@string/stats_button_text"
         android:id="@+id/stats_button"
         android:layout_below="@+id/end_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
+
 </RelativeLayout>

@@ -6,5 +6,8 @@
     <string name="action_settings">Settings</string>
     <string name="action_exit">Exit</string>
     <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="begin_button_text">Begin Tracking</string>
+    <string name="end_button_text">End Tracking</string>
+    <string name="stats_button_text">View Statistics</string>
 
 </resources>
